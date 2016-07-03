@@ -10,27 +10,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_deprecated_1 = require('@angular/router-deprecated');
-var agInput_1 = require('./agInput');
+var agCommon_1 = require('agCommon');
 var CreateComponent = (function () {
     function CreateComponent(router) {
         this.router = router;
-        this.loginId_Input = new agInput_1.agInputMeta();
+        this.loginId_Input = new agCommon_1.agInputMeta();
     }
     CreateComponent.prototype.ngOnInit = function () {
-        this.loginId_Input.id = "loginId_Input12345";
-        this.loginId_Input.agMouseDown = function () {
-            console.log(this.text);
-            this.id = "loginId_Input12345_MouseDown123";
-            $("#q01").html("abcdefg");
-        };
-        this.loginId_Input.agMouseUp = function () {
-            this.id = "loginId_Input12345_MouseUp456";
-            $("#q01").html("123456");
-        };
     };
     CreateComponent.prototype.backward = function () {
-        this.loginId_Input.id = "id_placeholder_changed1";
-        console.log("esdeewew");
+        console.log(this.loginId_Input.agClass);
     };
     CreateComponent.prototype.backward1 = function () {
         $("#widgetbody").css("display", "none");
@@ -38,8 +27,8 @@ var CreateComponent = (function () {
     CreateComponent = __decorate([
         core_1.Component({
             selector: 'CreateComponent',
-            templateUrl: 'http://localhost/tsc/HBBABA/Create.Component.html',
-            directives: [agInput_1.agInput]
+            templateUrl: 'agCommon/Create.Component.html',
+            directives: [agCommon_1.agInput]
         }), 
         __metadata('design:paramtypes', [router_deprecated_1.Router])
     ], CreateComponent);

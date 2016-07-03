@@ -18,8 +18,8 @@
 		}
 	</script>
 	
-			<!-- 1. Load libraries -->
-	 <!-- Polyfill(s) for older browsers -->
+	<!-- 1. Load libraries -->
+	<!-- Polyfill(s) for older browsers -->
 	<script type="text/javascript" src="../tsc/node_modules/core-js/client/shim.min.js"></script>
 	<script type="text/javascript" src="../tsc/node_modules/zone.js/dist/zone.js"></script>
 	<script type="text/javascript" src="../tsc/node_modules/reflect-metadata/Reflect.js"></script>
@@ -50,11 +50,13 @@
 				<div class="page-content">
 					<div class="page-content-area">
 						<HBBABA>
-                            <img src="https://mypraluentportal.com/_content/images/loading.gif" />
+                            <!--<img src="https://mypraluentportal.com/_content/images/loading.gif" />-->
+							Loading...
 						</HBBABA>
 					</div><!-- /.page-content-area -->
 				</div><!-- /.page-content -->
-			</div><!-- /.main-content -->
+			</div><!-- /.main-content -->
+
 			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
 				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
 			</a>
@@ -97,7 +99,7 @@
 		<script src="../assets/js/ace.min.js"></script>
 
 		<!-- inline scripts related to this page -->
-		<%--<script type="text/javascript">
+		<!--<script type="text/javascript">
 			/**jQuery(function($) {
 				var oTable1 = 
 				$('#sample-table-2')
@@ -163,6 +165,6 @@
 				}
 			
 			})
-		</script>--%>
+		</script>-->
 
 </asp:Content>

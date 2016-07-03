@@ -5,11 +5,12 @@
 (function(global) {
   // map tells the System loader where to look for things
   var map = {
-    'app':                        'tsc/build/app', // 'dist',
-    'HBBABA':                     '../tsc/build/HBBABA', // �T����,
-    '@angular':                   '../tsc/node_modules/@angular',
-    'angular2-in-memory-web-api': '../tsc/node_modules/angular2-in-memory-web-api',
-    'rxjs':                       '../tsc/node_modules/rxjs'
+    'app':                        '/tsc/build/app', // 'dist',
+    'HBBABA':                     '/tsc/build/HBBABA', //
+    'agCommon':                   '/tsc/build/agCommon', //
+    '@angular':                   '/tsc/node_modules/@angular',
+    'angular2-in-memory-web-api': '/tsc/node_modules/angular2-in-memory-web-api',
+    'rxjs':                       '/tsc/node_modules/rxjs'
   };
   // packages tells the System loader how to load when no filename and/or no extension
   var packages = {
@@ -17,6 +18,7 @@
     'HBBABA':                     { main: 'HBBABA_Boot.js',  defaultExtension: 'js' },
     'rxjs':                       { defaultExtension: 'js' },
     'angular2-in-memory-web-api': { main: 'index.js', defaultExtension: 'js' },
+    'agCommon':                   { main: 'index.js', defaultExtension: 'js' }
   };
   var ngPackageNames = [
     'common',

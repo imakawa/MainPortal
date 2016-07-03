@@ -14,11 +14,12 @@ var HBBABA_Component_1 = require('./HBBABA.Component');
 var Create_Component_1 = require('./Create.Component');
 var IndexComponent = (function () {
     function IndexComponent() {
+        this.baseUrl = "http://52.197.71.118/";
     }
     IndexComponent = __decorate([
         core_1.Component({
             selector: 'HBBABA',
-            template: "<base href=\"/\">\n             <router-outlet></router-outlet>",
+            template: "<router-outlet></router-outlet>",
             directives: [router_deprecated_1.ROUTER_DIRECTIVES],
             providers: [router_deprecated_1.ROUTER_PROVIDERS]
         }),

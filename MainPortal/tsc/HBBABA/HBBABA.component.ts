@@ -5,7 +5,7 @@ import { Router} from '@angular/router-deprecated';
 
 @Component({
   selector: 'HBBABA03',
-  templateUrl: 'http://localhost/tsc/HBBABA/HBBABA.component.html'
+  templateUrl: '/tsc/HBBABA/HBBABA.component.html'
 })
 export class HBBABAComponent implements OnInit {
   Employees: Employee[] = [

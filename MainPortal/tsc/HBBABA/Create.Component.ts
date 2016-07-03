@@ -1,10 +1,10 @@
 import { Component, OnInit} from '@angular/core';
 import { Router} from '@angular/router-deprecated';
-import { agInput,agInputMeta} from './agInput'
+import { agInput,agInputMeta} from 'agCommon';
 
 @Component({
   selector: 'CreateComponent',
-  templateUrl: 'http://localhost/tsc/HBBABA/Create.Component.html',
+  templateUrl: 'agCommon/Create.Component.html',
   directives: [agInput]
 })
 export class CreateComponent implements OnInit {
@@ -14,25 +14,11 @@ export class CreateComponent implements OnInit {
     }
 
     ngOnInit() {
-        //this.loginId_Input = new agInputMeta();
-        this.loginId_Input.id="loginId_Input12345";
-        this.loginId_Input.agMouseDown = function () {
-        console.log(this.text);
-        this.id="loginId_Input12345_MouseDown123";
-        $("#q01").html("abcdefg");
-        }
-        this.loginId_Input.agMouseUp = function () {
-            
-        this.id="loginId_Input12345_MouseUp456";
-        $("#q01").html("123456");
-        }
-        
     }
 
     backward(){ 
         //this.router.navigate(['HBBABA04']);
-        this.loginId_Input.id="id_placeholder_changed1";
-        console.log("esdeewew");
+        console.log(this.loginId_Input.agClass);
     }
     
     backward1(){

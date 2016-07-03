@@ -62,7 +62,7 @@ var HBBABAComponent = (function () {
     HBBABAComponent = __decorate([
         core_1.Component({
             selector: 'HBBABA03',
-            templateUrl: 'http://localhost/tsc/HBBABA/HBBABA.component.html'
+            templateUrl: '/tsc/HBBABA/HBBABA.component.html'
         }), 
         __metadata('design:paramtypes', [router_deprecated_1.Router])
     ], HBBABAComponent);

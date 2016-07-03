@@ -5,8 +5,7 @@ import { CreateComponent } from './Create.Component';
 
 @Component({
   selector: 'HBBABA',
-  template: `<base href="/">
-             <router-outlet></router-outlet>`,
+  template: `<router-outlet></router-outlet>`,
   directives: [ROUTER_DIRECTIVES],
   providers: [ROUTER_PROVIDERS]
 })
@@ -15,6 +14,7 @@ import { CreateComponent } from './Create.Component';
   { path: '/HBBABA/create', name: 'Create',  component: CreateComponent }
 ])
 export class IndexComponent {
+    baseUrl:string="http://52.197.71.118/";
     constructor(){
     }
 }

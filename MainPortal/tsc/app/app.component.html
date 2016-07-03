@@ -1,0 +1,37 @@
+<form *ngIf="active" (ngSubmit)="onSubmit()" #heroForm="ngForm">
+	  <label class="block clearfix">
+		<span class="block input-icon input-icon-right">
+		<input type="text" class="form-control" required placeholder="ID番号"
+		  [(ngModel)]="model.name" ngControl="name"  #name="ngForm" />
+			<i class="ace-icon glyphicon glyphicon-user"></i>
+		<div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+		  ID番号は必須です。
+		</div>            
+		</span>
+	 </label>
+	
+	  <label class="block clearfix">
+		<span class="block input-icon input-icon-right">
+		<input type="password" class="form-control" required placeholder="パスワード"
+		  [(ngModel)]="model.pw" ngControl="pw"  #pw="ngForm" />
+			<i class="ace-icon glyphicon glyphicon-lock"></i>
+		<div [hidden]="pw.valid || pw.pristine" class="alert alert-danger">
+		  パスワードは必須です。
+		</div>
+		</span>
+	 </label>
+ 
+		<div class="space"></div>
+
+		<div class="clearfix">
+			<!-- Todo:入力したIDとパスワードの桁数チェック、入力規則チェック-->			
+			<!--<label class="inline">
+				<span class="lbl" [hidden]="!active" class="alert alert-danger" role="alert"> ログインしたままにする</span>
+			</label>-->
+		
+			<button type="submit" class="width-35 pull-right btn btn-sm btn-primary" [disabled]="!heroForm.form.valid">
+				<i class="ace-icon fa fa-key"></i>
+				<span class="bigger-110">ログイン</span>
+			</button>
+		</div>
+	</form>

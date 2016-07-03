@@ -1,4 +1,4 @@
-# Windows image file caches 
+# Windows image file caches
 Thumbs.db
 ehthumbs.db
 
@@ -7,9 +7,6 @@ Desktop.ini
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
-
-/MainPortal.Tests
-/MainPortal/tsc/node_modules
 
 # Windows Installer files
 *.cab

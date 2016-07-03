@@ -1,0 +1,12 @@
+E:\TymitecSolutions\Anaget\Product\MainPortal\MainPortal\bin\MainPortal.dll
+E:\TymitecSolutions\Anaget\Product\MainPortal\MainPortal\bin\MainPortal.pdb
+E:\TymitecSolutions\Anaget\Product\MainPortal\MainPortal\bin\MainPortal.xml
+E:\TymitecSolutions\Anaget\Product\MainPortal\MainPortal\obj\Debug\MainPortal.Resources.resources
+E:\TymitecSolutions\Anaget\Product\MainPortal\MainPortal\obj\Debug\MainPortal.vbproj.GenerateResource.Cache
+E:\TymitecSolutions\Anaget\Product\MainPortal\MainPortal\obj\Debug\MainPortal.dll
+E:\TymitecSolutions\Anaget\Product\MainPortal\MainPortal\obj\Debug\MainPortal.xml
+E:\TymitecSolutions\Anaget\Product\MainPortal\MainPortal\obj\Debug\MainPortal.pdb
+E:\TymitecSolutions\Anaget\Product\MainPortal\MainPortal\bin\Newtonsoft.Json.dll
+E:\TymitecSolutions\Anaget\Product\MainPortal\MainPortal\bin\Newtonsoft.Json.pdb
+E:\TymitecSolutions\Anaget\Product\MainPortal\MainPortal\bin\Newtonsoft.Json.xml
+E:\TymitecSolutions\Anaget\Product\MainPortal\MainPortal\obj\Debug\MainPortal.vbprojResolveAssemblyReference.cache

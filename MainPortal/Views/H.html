@@ -1,0 +1,105 @@
+<!-- Header -->
+<div class="page-header">
+    <h1>
+        <i class="ace-icon fa fa-list-ul"></i>
+        職員情報一覧
+    </h1>
+</div>
+
+<!-- Function Buttons -->
+<p>
+    <button  class="btn btn-white btn-warning btn-bold" (click)="CreateData()">
+        <i class="ace-icon fa fa-plus blue"></i>
+        新規
+    </button>
+    <button class="btn btn-white btn-primary btn-bold" (click)="EditData()">
+        <i class="ace-icon fa fa-pencil-square-o"></i>
+        編集
+    </button>
+    <button class="btn btn-white btn-danger btn-bold"  (click)="DeleteData()">
+        <i class="ace-icon fa fa-trash-o"></i>
+        削除
+    </button>
+    <button class="btn btn-white btn-success btn-bold" (click)="RefreshData()">
+        <i class="ace-icon fa fa-refresh"></i>
+        更新
+    </button>
+</p>
+
+<div class="row">
+    <div class="col-xs-12">
+        <!-- <h3 class="header smaller lighter blue">jQuery dataTables</h3> -->
+        <div id="tblHeader" class="table-header">
+            Results for "Latest Registered Domains"
+        </div>
+        <!-- <div class="table-responsive">
+        <!-- <div class="dataTables_borderWrap"> -->
+        <div class="table-responsive">
+            <table id="sample-table-2" class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th class="center">
+                            <!--<label class="position-relative">
+                                <input type="checkbox" class="ace" />
+                                <span class="lbl"></span>
+                            </label>-->
+                        </th>
+                        <th>Domain</th>
+                        <th>Price</th>
+                        <th class="hidden-480">Clicks</th>
+
+                        <th>
+                            <i class="ace-icon fa fa-clock-o bigger-110 hidden-480"></i>
+                            Update
+                        </th>
+                        <th class="hidden-480">Status</th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!--<tr>
+                        <td class="center">
+                            <label class="position-relative">
+                                <input type="checkbox" class="ace" />
+                                <span class="lbl"></span>
+                            </label>
+                        </td>
+
+                        <td>
+                            app.com
+                        </td>
+                        <td>$45</td>
+                        <td class="hidden-480">3,330</td>
+                        <td>Feb 12</td>
+
+                        <td class="hidden-480">
+                            <span class="label label-sm label-warning">Expiring</span>
+                        </td>
+                    </tr>-->
+
+                    <tr *ngFor="let em of Employees">
+                        <td class="center">
+                            <label class="position-relative">
+                                <input type="checkbox" class="ace" />
+                                <span class="lbl"></span>
+                            </label>
+                        </td>
+
+                        <td>
+                            {{em.id}}
+                        </td>
+                        <td>{{em.name}}</td>
+                        <td class="hidden-480">2,595</td>
+                        <td>Feb 18</td>
+
+                        <td class="hidden-480">
+                            <span class="label label-sm label-success">Registered</span>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

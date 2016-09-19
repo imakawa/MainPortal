@@ -14,11 +14,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var agComponent_1 = require('./agComponent');
+var agEnum_1 = require('./agEnum');
 var agInput = (function () {
     function agInput() {
     }
     agInput.prototype.ngOnInit = function () {
-        this.agMeta.agId = this.agId;
+        this.agMeta.setAgId(this.agId);
         this.agMeta.agClass = this.agClass;
         this.agMeta.agStyle = this.agStyle;
         this.agMeta.agName = this.agName;
@@ -26,6 +28,7 @@ var agInput = (function () {
         this.agMeta.agPlaceHolder = this.agPlaceHolder;
         this.agMeta.agValue = this.agValue;
         this.agMeta.agInit();
+        console.log(this.agClass);
     };
     __decorate([
         core_1.Input(), 
@@ -69,45 +72,6 @@ var agInput = (function () {
     return agInput;
 }());
 exports.agInput = agInput;
-var agComponentMeta = (function () {
-    function agComponentMeta() {
-    }
-    agComponentMeta.prototype.agInit = function () {
-        if (this.agId == undefined) {
-            this.agId = "";
-        }
-        if (this.agClass == undefined) {
-            this.agClass = "";
-        }
-        if (this.agStyle == undefined) {
-            this.agStyle = "";
-        }
-    };
-    agComponentMeta.prototype.agClick = function () {
-    };
-    agComponentMeta.prototype.agKeyDown = function () {
-    };
-    agComponentMeta.prototype.agKeyUp = function () {
-    };
-    agComponentMeta.prototype.agMouseDown = function () {
-    };
-    agComponentMeta.prototype.agMouseUp = function () {
-    };
-    return agComponentMeta;
-}());
-var agInputType;
-(function (agInputType) {
-    agInputType[agInputType["button"] = 0] = "button";
-    agInputType[agInputType["checkbox"] = 1] = "checkbox";
-    agInputType[agInputType["file"] = 2] = "file";
-    agInputType[agInputType["hidden"] = 3] = "hidden";
-    agInputType[agInputType["image"] = 4] = "image";
-    agInputType[agInputType["password"] = 5] = "password";
-    agInputType[agInputType["radio"] = 6] = "radio";
-    agInputType[agInputType["reset"] = 7] = "reset";
-    agInputType[agInputType["submit"] = 8] = "submit";
-    agInputType[agInputType["text"] = 9] = "text";
-})(agInputType || (agInputType = {}));
 var agInputMeta = (function (_super) {
     __extends(agInputMeta, _super);
     function agInputMeta() {
@@ -116,7 +80,7 @@ var agInputMeta = (function (_super) {
     agInputMeta.prototype.agInit = function () {
         _super.prototype.agInit.call(this);
         if (this.agType == undefined) {
-            this.agType = agInputType[agInputType.text];
+            this.agType = agEnum_1.agInputType[agEnum_1.agInputType.text];
         }
         if (this.agValue == undefined) {
             this.agValue = "";
@@ -129,5 +93,5 @@ var agInputMeta = (function (_super) {
         }
     };
     return agInputMeta;
-}(agComponentMeta));
+}(agComponent_1.agComponentMeta));
 exports.agInputMeta = agInputMeta;

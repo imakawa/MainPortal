@@ -1,5 +1,7 @@
 
 import { Component,Input,OnInit} from '@angular/core';
+import { agComponentMeta } from './agComponent';
+import { agInputType } from './agEnum';
 
 @Component({
   selector: 'agInput',
@@ -21,13 +23,14 @@ export class agInput implements OnInit {
   @Input() agId: string;
   @Input() agClass: string;
   @Input() agStyle: string;
-  @Input() agName: string;
+  @Input() agName: string;  
   @Input() agType: string;
   @Input() agPlaceHolder: string;
   @Input() agValue: string;
   
   ngOnInit() {
-      this.agMeta.agId = this.agId;
+      // this.agMeta.agId = this.agId;
+      this.agMeta.setAgId(this.agId);
       this.agMeta.agClass = this.agClass;
       this.agMeta.agStyle = this.agStyle;
       this.agMeta.agName = this.agName;
@@ -35,52 +38,9 @@ export class agInput implements OnInit {
       this.agMeta.agPlaceHolder = this.agPlaceHolder;
       this.agMeta.agValue = this.agValue;
       this.agMeta.agInit();
+      console.log(this.agClass);
+      
   }
-}
-
-class agComponentMeta {
-  public agId : string;
-  public agClass : string;
-  public agStyle : string;
-
-  agInit(){
-    if (this.agId == undefined) { this.agId=""}
-    if (this.agClass == undefined) { this.agClass=""}
-    if (this.agStyle == undefined) { this.agStyle=""}
-  }
-
-  agClick(){
-    //console.log("Debug:agClick()");
-  }
- 
-  agKeyDown(){
-    //console.log("Debug:agKeyDown()");
-  }
-
-  agKeyUp(){
-    //console.log("Debug:agKeyUp()");
-  }
-
-  agMouseDown(){
-     //console.log("Debug:agMouseDown()");
-  }
-
-  agMouseUp(){
-   //console.log("Debug:agMouseUp()");
-  }
-}
-
-enum agInputType{
-  button = 0,
-  checkbox,
-  file,
-  hidden,
-  image,
-  password,
-  radio,
-  reset,
-  submit,
-  text
 }
 
 export class agInputMeta extends agComponentMeta{

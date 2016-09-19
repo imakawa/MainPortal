@@ -2,7 +2,7 @@
 <div class="page-header">
     <h1>
         <i class="ace-icon fa fa-plus blue"></i>
-        新規職員情報
+        新規職員情報   
     </h1>
 </div>
 
@@ -33,26 +33,29 @@
             <div id="widgetbody" class="widget-body">
                 <div class="widget-main">
                     <div class="form-group">
-                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1">ログインID：</label>
-                        <div class="col-sm-10" >
-                            <agInput agId="loginId_ID" agClass="col-xs-10 col-sm-10" [agMeta]="loginId_Input"></agInput>
+                        <label class="col-sm-3 control-label no-padding-right" for="form-field-1">ログインID：</label>
+                        <div class="col-sm-9" >
+                            <!--<agInput agId="loginId_ID" agClass="col-xs-10 col-sm-10" [agMeta]="loginId_Input"></agInput>-->
+                            <input type="text"  id="form-field-1"  class="col-xs-7 col-sm-7" readonly="true" />
+                            <button type="button" class="btn btn-info btn-sm col-xs-2 col-sm-2 padding-right">生成</button>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1">フリガナ：</label>
-                        <div class="col-sm-10">
-                            <input type="text" (click)="backward()" id="form-field-1" placeholder="フリガナ" class="col-xs-10 col-sm-10" />
+                        <label class="col-sm-3 control-label no-padding-right" for="form-field-1">フリガナ：</label>
+                        <div class="col-sm-9">
+                            <input type="text" (click)="backward()" id="form-field-1"  class="col-xs-10 col-sm-10" />
+                            <!--<agInput agId="loginId_ID" agClass="col-xs-10 col-sm-10" placeholder="フリガナ"[agMeta]="loginId_Input"></agInput>-->
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1">名前：</label>
-                        <div class="col-sm-10">
+                        <label class="col-sm-3 control-label no-padding-right" for="form-field-1">名前：</label>
+                        <div class="col-sm-9">
                             <input type="text" id="form-field-1" placeholder="名前" class="col-xs-10 col-sm-10" />
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-2 control-label no-padding-right" for="form-field-1">性別：</label>
-                        <div class="btn-group col-sm-10" role="group" aria-label="...">
+                        <label class="col-sm-3 control-label no-padding-right" for="form-field-1">性別：</label>
+                        <div class="btn-group col-sm-9" role="group" aria-label="...">
                             <button type="button" class="btn btn-primary">男性</button>
                             <button type="button" class="btn btn-default">女性</button>
                         </div>

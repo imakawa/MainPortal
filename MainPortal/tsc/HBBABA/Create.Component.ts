@@ -4,7 +4,7 @@ import { agInput,agInputMeta} from 'agCommon';
 
 @Component({
   selector: 'CreateComponent',
-  templateUrl: 'agCommon/Create.Component.html',
+  templateUrl: '/tsc/HBBABA/Create.Component.html',
   directives: [agInput]
 })
 export class CreateComponent implements OnInit {
@@ -14,14 +14,15 @@ export class CreateComponent implements OnInit {
     }
 
     ngOnInit() {
+        // this.loginId_Input.agClass="col-xs-10 col-sm-10";
     }
 
     backward(){ 
         //this.router.navigate(['HBBABA04']);
-        console.log(this.loginId_Input.agClass);
+        //console.log(this.loginId_Input.agClass + "222");
     }
     
     backward1(){
-        $("#widgetbody").css("display","none");
+        //$("#widgetbody").css("display","none");
     }
 }

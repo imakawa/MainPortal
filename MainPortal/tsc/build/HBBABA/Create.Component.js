@@ -19,15 +19,13 @@ var CreateComponent = (function () {
     CreateComponent.prototype.ngOnInit = function () {
     };
     CreateComponent.prototype.backward = function () {
-        console.log(this.loginId_Input.agClass);
     };
     CreateComponent.prototype.backward1 = function () {
-        $("#widgetbody").css("display", "none");
     };
     CreateComponent = __decorate([
         core_1.Component({
             selector: 'CreateComponent',
-            templateUrl: 'agCommon/Create.Component.html',
+            templateUrl: '/tsc/HBBABA/Create.Component.html',
             directives: [agCommon_1.agInput]
         }), 
         __metadata('design:paramtypes', [router_deprecated_1.Router])
